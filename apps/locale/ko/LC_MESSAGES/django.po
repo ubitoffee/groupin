@@ -45,7 +45,7 @@ msgstr "로그인하여 GroupIn을 시작하세요"
 
 #: .\apps\accounts\templates\accounts\login.html:33
 msgid "I forgot my password"
-msgstr "비밀번호는 잃어버렸어요"
+msgstr "비밀번호를 잃어버렸어요"
 
 #: .\apps\accounts\templates\accounts\login.html:34
 #: .\apps\accounts\templates\accounts\register.html:13
