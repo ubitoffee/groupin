@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}GroupIn{% endblock %}</title>
+
+    {% include "base/head.html" %}
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body class="hold-transition skin-black-light sidebar-mini">
+
+<div class="wrapper">
+
+    {% include "base/header.html" %}
+    {% include "base/left-sidebar.html" %}
+
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                Dashboard 3
+                <small>Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+                {% block breadcrumbs %}
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                {% endblock %}
+            </ol>
+        </section>
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    {% include "base/footer.html" %}
+
+    {% include "base/right-sidebar.html" %}
+
+</div>
+<!-- ./wrapper -->
+
+{% include "base/script.html" %}
+
+{% block script %}
+{% endblock %}
+
+</body>
+</html>

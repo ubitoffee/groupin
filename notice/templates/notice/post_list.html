@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ko-kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Notice Page</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/semantic.css' %}" />
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/semantic.js' %}"></script>
+    </head>
+    <body>
+        <div class="ui container">
+            <div>
+                <h1><a href="/">Notice Page</a></h1>
+            </div>
+
+            <div class="ui relaxed divided list">
+            {% for post in posts %}
+                <div class="item">
+                    <i class="large github middle aligned icon"></i>
+                    <div class="content">
+                        <a href="#" class="header">{{ post.title }}</a>
+                        <p>published: {{ post.published_date }}</p>
+                        <div class="description">{{ post.text|linebreaksbr }}</div>
+                    </div>
+
+                </div>
+            {% endfor %}
+
+        </div>
+    </body>
+</html>
+

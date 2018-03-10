@@ -1,0 +1,12 @@
+*.pyc
+*~
+__pycache__
+virtualenv
+db.sqlite3
+/static
+.DS_Store
+.idea
+node_modules
+bower_components
+*.log
+settings.py

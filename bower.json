@@ -1,0 +1,9 @@
+{
+  "name" : "groupin",
+  "dependencies" : {
+    "admin-lte" : "latest",
+    "fastclick" : "latest",
+    "datatables.net": "latest",
+    "datatables.net-bs": "latest"
+  }
+}
